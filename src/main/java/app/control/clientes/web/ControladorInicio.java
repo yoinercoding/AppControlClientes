@@ -1,7 +1,7 @@
-package mx.com.gm.web;
+package app.control.clientes.web;
 
 import lombok.extern.slf4j.Slf4j;
-import mx.com.gm.servicio.PersonaService;
+import app.control.clientes.servicio.PersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

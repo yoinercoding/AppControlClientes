@@ -1,6 +1,6 @@
-package mx.com.gm.dao;
+package app.control.clientes.dao;
 
-import mx.com.gm.domain.Persona;
+import app.control.clientes.domain.Persona;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PersonaDao extends CrudRepository<Persona, Long>{

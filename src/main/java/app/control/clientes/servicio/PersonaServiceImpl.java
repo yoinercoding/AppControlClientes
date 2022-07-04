@@ -1,8 +1,8 @@
-package mx.com.gm.servicio;
+package app.control.clientes.servicio;
 
 import java.util.List;
-import mx.com.gm.dao.PersonaDao;
-import mx.com.gm.domain.Persona;
+import app.control.clientes.dao.PersonaDao;
+import app.control.clientes.domain.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +16,7 @@ public class PersonaServiceImpl implements PersonaService {
     @Override
     @Transactional(readOnly = true)
     public List<Persona> listarPersonas() {
+
         return (List<Persona>) personaDao.findAll();
     }
 

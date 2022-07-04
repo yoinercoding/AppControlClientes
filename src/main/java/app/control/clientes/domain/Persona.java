@@ -1,4 +1,4 @@
-package mx.com.gm.domain;
+package app.control.clientes.domain;
 
 import java.io.Serializable;
 import javax.persistence.*;

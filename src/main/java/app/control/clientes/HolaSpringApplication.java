@@ -1,4 +1,4 @@
-package mx.com.gm;
+package app.control.clientes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
