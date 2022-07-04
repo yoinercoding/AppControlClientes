@@ -1,5 +1,6 @@
 package app.control.clientes.web;
 
+import app.control.clientes.domain.Persona;
 import lombok.extern.slf4j.Slf4j;
 import app.control.clientes.servicio.PersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,5 +21,10 @@ public class ControladorInicio {
         log.info("ejecutando el controlador Spring MVC");
         model.addAttribute("personas", personas);
         return "index";
+    }
+
+    @GetMapping("/agregar")
+    public String agregar(Persona persona) {
+        return "modificar";
     }
 }
