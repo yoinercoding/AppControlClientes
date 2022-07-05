@@ -1,4 +1,4 @@
-App Presupuesto - Angular
+App Presupuesto - Spring Framework 
 
 Saludos :D!
 
