@@ -4,11 +4,13 @@ import app.control.clientes.domain.Persona;
 import lombok.extern.slf4j.Slf4j;
 import app.control.clientes.servicio.PersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.security.core.userdetails.User;
 
 import javax.validation.Valid;
 
@@ -20,9 +22,10 @@ public class ControladorInicio {
     private PersonaService personaService;
     
     @GetMapping("/")
-    public String inicio(Model model){
+    public String inicio(Model model, @AuthenticationPrincipal User user){
         var personas = personaService.listarPersonas();
         log.info("ejecutando el controlador Spring MVC");
+        log.info("usuario que hizo log:" + user);
         model.addAttribute("personas", personas);
         return "index";
     }
