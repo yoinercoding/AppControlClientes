@@ -16,6 +16,9 @@
              <a th:href="@{/(lang=es)}">ES</a> |
              <a th:href="@{/(lang=en)}">EN</a> |
              <span> [[#{plantilla.pie-pagina}]] <a href="https://www.linkedin.com/in/yoinerbello/" target="_blank">Yoiner Rafael Bello Fajardo</a></span>
+             <form method="POST" th:action="@{/logout}">
+                 <a href="#" onclick="this.parentNode.submit();">Logout</a>
+             </form>
          </div>
 
      </footer>
