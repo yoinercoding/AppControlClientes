@@ -11,7 +11,13 @@
      </header>
 
      <footer th:fragment="footer">
-         <p> [[#{plantilla.pie-pagina}]] <a href="https://www.linkedin.com/in/yoinerbello/" target="_blank">Yoiner Rafael Bello Fajardo</a></p>
+         <div>
+             <br/>
+             <a th:href="@{/(lang=es)}">ES</a> |
+             <a th:href="@{/(lang=en)}">EN</a> |
+             <span> [[#{plantilla.pie-pagina}]] <a href="https://www.linkedin.com/in/yoinerbello/" target="_blank">Yoiner Rafael Bello Fajardo</a></span>
+         </div>
+
      </footer>
 </body>
 </html>
