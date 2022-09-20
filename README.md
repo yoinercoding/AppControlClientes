@@ -1,4 +1,4 @@
-App Control Clientes - Spring Framework (EN PROCESO)
+App Control Clientes - Spring Framework
 
 Saludos :D!
 
